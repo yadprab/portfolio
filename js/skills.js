@@ -4,7 +4,11 @@ const skillsFn = () => {
   const charts = document.querySelectorAll("canvas");
 
   charts.forEach((chart) => chartFn(chart));
-};
+
+  
+
+
+}
 
 const chartFn = (ele) => {
   const id = ele.id;
@@ -31,11 +35,6 @@ const chartFn = (ele) => {
   }
 };
 
-const color = () => {
-  const themeClass = document.body.className;
-
-  return themeClass == "light" ? "hsl(238, 29%, 16%)" : "hsl(0, 0%, 98%)";
-};
 
 const htmlChart = (chart) => {
   let htmlSkillChart = new Chart(chart.getContext("2d"), {
@@ -56,7 +55,7 @@ const htmlChart = (chart) => {
         position: "bottom",
         labels: {
           boxWidth: 20,
-          fontColor: `${color()}`,
+          fontColor: "#777",
           fontSize: 12,
           padding: 12,
         },
@@ -91,7 +90,7 @@ const cssChart = (chart) => {
         position: "bottom",
         labels: {
           boxWidth: 20,
-          fontColor: `${color()}`,
+          fontColor: "#777",
           fontSize: 12,
           padding: 12,
         },
@@ -133,7 +132,7 @@ const jsChart = (chart) => {
         position: "bottom",
         labels: {
           boxWidth: 20,
-          fontColor: `${color()}`,
+          fontColor: "#777",
           fontSize: 12,
           padding: 8,
         },
@@ -184,7 +183,7 @@ const reactChart = (chart) => {
         position: "bottom",
         labels: {
           boxWidth: 20,
-          fontColor: `${color()}`,
+          fontColor: "#777",
           fontSize: 12,
           padding: 8,
         },
@@ -236,13 +235,15 @@ const tsChart = (chart) => {
         position: "bottom",
         labels: {
           boxWidth: 20,
-          fontColor: `${color()}`,
+          fontColor: "#777",
           fontSize: 12,
         },
       },
     },
   });
 };
+
+
 
 //1.0 main function
 window.addEventListener("DOMContentLoaded", skillsFn);

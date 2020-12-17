@@ -11,11 +11,28 @@
     <section class="mobile--nav hide">
       <nav>
         <ul>
-          <li><a href="#index.html">home</a></li>
-          <li><a href="#about.html">about</a></li>
-          <li><a href="#projects.html">projects</a></li>
-          <li><a href="#contact.html">contact</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
+        <button id="close--button" aria-label="close--button">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 18L18 6M6 6L18 18"
+              stroke="#4A5568"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </nav>
     </section>
     <!-- mobile--nav--section -->
@@ -27,29 +44,23 @@
         <!-- title--section -->
 
         <ul class="desktop--nav hide">
-          <li><a href="#index.html">home</a></li>
-          <li><a href="#about.html">about</a></li>
-          <li><a href="#projects.html">projects</a></li>
-          <li><a href="#contact.html">contact</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
         <!-- desktop--nav -->
         <section class="button--section">
           <section class="theme--button--section">
             <button id="light--theme--button" role="switch">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
-                aria-labelledby="title-1 desc-1"
-              >
-                <title>theme changer current theme light</title>
-                <desc>sun icon</desc>
-                <path
-                  fill="#FFF"
-                  fill-rule="evenodd"
-                  d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"
-                />
-              </svg>
+             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+            <path
+              fill="#FFF"
+              fill-rule="evenodd"
+              d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+            />
+          </svg>
+            
             </button>
           </section>
           <!-- theme--section -->
@@ -96,7 +107,12 @@
         <!-- hero text section  -->
 
         <section class="email--to--section">
-          <a href="#">hire me</a>
+          <a
+            href="mailto:yadhavanprabhakar744@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >hire me</a
+          >
         </section>
       </section>
       <!-- hero section  -->
@@ -119,6 +135,7 @@
           believe in teamwork <a href="#about.html"> more about journey </a>
         </p>
       </article>
+      <!-- about section  -->
       <section class="projects">
         <h2>projects</h2>
         <ul class="cards">
@@ -281,7 +298,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                     <!--
 Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
---> 
+-->
                     <path
                       d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
                     />
@@ -291,62 +308,109 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             </article>
           </li>
         </ul>
-        <section  class="more--pro">
+        <section class="more--pro">
           <a href="projects.html">more projects</a>
         </section>
       </section>
+      <!-- projects section  -->
       <section class="skills">
         <h2>skills</h2>
         <section class="chart--container">
           <article class="html-chart--area">
-             <section  class="tools">
-                  <h3>html </h3>
-            <img src="./images/html-removebg-preview.png" alt="html logo">
-             </section>
+            <section class="tools">
+              <h3>html</h3>
+              <img src="./images/html-removebg-preview.png" alt="html logo" />
+            </section>
             <canvas id="htmlChart" width="100px" height="70px"></canvas>
           </article>
-           <article class="css-chart--area">
-              <section  class="tools">
-                  <h3>css+ sass </h3>
-            <img src="./images/css-removebg-preview.png" alt="html logo">
-            <img src="./images/sass.svg" alt="css and sass logo">
-             </section>
+          <article class="css-chart--area">
+            <section class="tools">
+              <h3>css+ sass</h3>
+              <img src="./images/css-removebg-preview.png" alt="html logo" />
+              <img src="./images/sass.svg" alt="css and sass logo" />
+            </section>
             <canvas id="cssChart" width="100px" height="70px"></canvas>
           </article>
           <article class="js-chart--area">
             <section class="tools">
-               <h3>Javascript</h3>
-               <img src="./images/js.png" alt="Javascript logo">
+              <h3>Javascript</h3>
+              <img src="./images/js.png" alt="Javascript logo" />
             </section>
             <canvas id="jsChart" width="100px" height="70px"></canvas>
           </article>
           <article class="react-chart--area">
-             <section class="tools">
-               <h3>react</h3>
-               <img src="./images/react.jpg" alt="react logo">
-             </section>
+            <section class="tools">
+              <h3>react</h3>
+              <img src="./images/react.jpg" alt="react logo" />
+            </section>
             <canvas id="reactChart" width="100px" height="70px"></canvas>
           </article>
           <article class="ts-chart--area">
-           <section class="tools">
-               <h3>typescript</h3>
-               <img src="./images/ts.png" alt="typescript logo">
-           </section>
+            <section class="tools">
+              <h3>typescript</h3>
+              <img src="./images/ts.png" alt="typescript logo" />
+            </section>
             <canvas id="tsChart" width="100px" height="70px"></canvas>
           </article>
-          
-
         </section>
-        <article>
-
-        </article>
-        
+        <article></article>
       </section>
-    </main>
- 
+      <!-- skills section  -->
+      <section id="contact">
+        <h2>contact me</h2>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <section class="form--control">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" />
+          </section>
+          <section class="form--control">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </section>
+          <section class="form--control">
+            <label for="comments">comments</label>
+            <textarea name="comments" id="comments"></textarea>
+          </section>
+          <input type="submit" id="submit" value="contact" />
+        </form>
+      </section>
+      <!-- contact section  -->
 
+      <footer>
+        <h4>yadhavanprabhakar</h4>
+
+        <a
+          href="https://github.com/yadprab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+            aria-labelledby="title-foot desc-foot"
+          >
+            <title id="title--foot">github icon</title>
+            <!--Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
+License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)-->
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.frontendmentor.io/profile/yadprab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./images/frontend.jpg" alt="frontend mentor logo" />
+        </a>
+      </footer>
+    </main>
+    <!-- main section  -->
+
+     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
     <script src="./js/skills.js"></script>
-
+    <script src="./js/main.js"></script>
   </body>
 </html>

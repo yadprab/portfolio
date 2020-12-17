@@ -43,8 +43,8 @@
   --DarkGrayishBlue: hsl(236, 9%, 61%);
   --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
   --LightGrayishBluehover: hsl(235, 18%, 25%);
-  --border-clr: rgba(0,0,0, 0.5);
-  --border-hover: rgba(0,0,0,1);
+  --border-clr: rgba(0, 0, 0, 0.5);
+  --border-hover: rgba(0, 0, 0, 1);
 }
 
 * {
@@ -74,6 +74,7 @@ body {
   font-family: var(--font);
   line-height: 1.5;
   font-size: 18px;
+  position: relative;
 }
 
 header {
@@ -258,14 +259,14 @@ main .about p a:hover {
   color: var(--BrightBlue);
 }
 
-.projects h2, .skills h2 {
+.projects h2 {
   text-transform: capitalize;
   margin-bottom: 1em;
   padding: 0 1em;
   color: var(--LightGrayishBlue);
 }
 
-.projects .cards, .skills .cards {
+.projects .cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (300px)[1];
@@ -278,7 +279,7 @@ main .about p a:hover {
   list-style: none;
 }
 
-.projects .cards li, .skills .cards li {
+.projects .cards li {
   background-color: var(--VeryDarkDesaturatedBlue);
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-2));
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-2));
@@ -289,28 +290,28 @@ main .about p a:hover {
   transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
 
-.projects .cards li:hover, .skills .cards li:hover {
+.projects .cards li:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-.projects .img--section img, .skills .img--section img {
+.projects .img--section img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.projects .project--info, .skills .project--info {
+.projects .project--info {
   margin-bottom: 2em;
 }
 
-.projects .project--info h2, .skills .project--info h2 {
+.projects .project--info h2 {
   padding: 0;
   margin: 0.5em;
   font-size: 1.3rem;
   text-transform: capitalize;
 }
 
-.projects .project--info article, .skills .project--info article {
+.projects .project--info article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,7 +326,7 @@ main .about p a:hover {
           justify-content: flex-start;
 }
 
-.projects .project--info article p, .skills .project--info article p {
+.projects .project--info article p {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 500;
@@ -338,23 +339,23 @@ main .about p a:hover {
   border-radius: 3px;
 }
 
-.projects .project--info article .html, .skills .project--info article .html {
+.projects .project--info article .html {
   color: #f16529;
 }
 
-.projects .project--info article .sass, .skills .project--info article .sass {
+.projects .project--info article .sass {
   color: #c76395;
 }
 
-.projects .project--info article .api, .skills .project--info article .api {
+.projects .project--info article .api {
   color: var(--BrightBlue);
 }
 
-.projects .project--info article .js, .skills .project--info article .js {
+.projects .project--info article .js {
   color: #f7d724;
 }
 
-.projects .links--to--project, .skills .links--to--project {
+.projects .links--to--project {
   margin: 0 0.5em 1.5em 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,12 +371,12 @@ main .about p a:hover {
           justify-content: space-between;
 }
 
-.projects .links--to--project svg, .skills .links--to--project svg {
+.projects .links--to--project svg {
   width: 30px;
   height: 30px;
 }
 
-.projects .links--to--project .live, .skills .links--to--project .live {
+.projects .links--to--project .live {
   text-decoration: none;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -389,28 +390,28 @@ main .about p a:hover {
   transition: color 0.4s ease-in;
 }
 
-.projects .links--to--project .live:hover, .skills .links--to--project .live:hover {
+.projects .links--to--project .live:hover {
   border-color: var(--border-hover);
 }
 
-.projects .links--to--project .live:active, .skills .links--to--project .live:active {
+.projects .links--to--project .live:active {
   border-color: var(--border-hover);
 }
 
-.projects .links--to--project .git svg path, .skills .links--to--project .git svg path {
+.projects .links--to--project .git svg path {
   fill: var(--border-hover);
 }
 
-.projects .links--to--project .git:hover, .skills .links--to--project .git:hover {
+.projects .links--to--project .git:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.projects .more--pro, .skills .more--pro {
+.projects .more--pro {
   text-align: center;
 }
 
-.projects .more--pro a, .skills .more--pro a {
+.projects .more--pro a {
   text-decoration: none;
   margin-bottom: 3em;
   text-transform: capitalize;
@@ -421,26 +422,35 @@ main .about p a:hover {
           transform: color 0.4s ease-in;
 }
 
-.projects .more--pro a:hover, .skills .more--pro a:hover {
+.projects .more--pro a:hover {
   color: var(--BrightBlue);
 }
 
+.skills {
+  margin-bottom: 3em;
+}
+
+.skills h2 {
+  text-transform: capitalize;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  color: var(--LightGrayishBlue);
+}
+
 .skills .chart--container {
-  background-color: var(--VeryDarkBlue);
+  background-color: var(--VeryLightGrayishBlue);
   padding: 0.5em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 300px);
-  grid-auto-rows: 250px;
+  -ms-grid-columns: (350px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 350px);
+  grid-auto-rows: 300px;
   place-content: center;
   gap: 1rem;
 }
 
 .skills .chart--container article {
   padding: 0.5em;
-  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-5));
-          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-5));
   background-color: var(--VeryDarkDesaturatedBlue);
 }
 
@@ -482,8 +492,307 @@ main .about p a:hover {
   margin-bottom: 1em;
 }
 
+#contact {
+  padding: 0 1.5em;
+  margin-bottom: 3em;
+}
+
+#contact h2 {
+  text-transform: capitalize;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  color: var(--LightGrayishBlue);
+}
+
+#contact form {
+  max-width: 480px;
+  background-color: var(--VeryDarkDesaturatedBlue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-4));
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-4));
+  padding: 0.5em;
+}
+
+#contact form .form--control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contact form .form--control label {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 0.3em;
+  letter-spacing: 2px;
+  color: var(--LightGrayishBlue);
+}
+
+#contact form .form--control input:not(#submit) {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  padding: 0 1em;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  font-weight: 500;
+  color: var(--LightGrayishBlue);
+  background-color: var(--VeryLightGrayishBlue);
+}
+
+#contact form .form--control input:not(#submit) :focus {
+  -webkit-box-shadow: 0 0 10px -5px var(--BrightBlue);
+          box-shadow: 0 0 10px -5px var(--BrightBlue);
+}
+
+#contact form .form--control textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: var(--VeryLightGrayishBlue);
+  color: var(--LightGrayishBlue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  resize: none;
+  padding: 1em;
+}
+
+#contact form #submit {
+  display: inline-block;
+  line-height: 1.5;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.375em 0.75em;
+  font-size: 0.89rem;
+  text-transform: capitalize;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-bottom: 1.5em;
+  padding: 0.5em 2em;
+  font-family: var(--font);
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 600;
+  background-color: var(--BrightBlue);
+  opacity: 0.8;
+  -webkit-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+}
+
+#contact form #submit:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: var(--VeryDarkBlue);
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer h4 {
+  display: block;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: var(--LightGrayishBlue);
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+footer a :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+footer svg {
+  width: 25px;
+  height: 25px;
+}
+
+footer svg path {
+  fill: var(--border-hover);
+}
+
+.mobile--nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 480px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: hidden;
+}
+
+.mobile--nav nav {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  width: 300px;
+  position: relative;
+  margin-top: 1em;
+}
+
+.mobile--nav nav button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.mobile--nav nav button svg {
+  pointer-events: none;
+}
+
+.mobile--nav ul {
+  padding: 2em;
+  height: 100%;
+  background-color: var(--VeryDarkDesaturatedBlue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.mobile--nav ul li {
+  margin: 0.5em 0;
+}
+
+.mobile--nav ul a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  color: var(--LightGrayishBlue);
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.mobile--nav ul a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  bottom: -5px;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: var(--BrightBlue);
+}
+
+.mobile--nav ul a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .hide {
   display: none;
+}
+
+.show nav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .dark {
