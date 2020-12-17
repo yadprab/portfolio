@@ -607,7 +607,7 @@ main .about p a:hover {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
   padding: 0.5em 2em;
   font-family: var(--font);
   letter-spacing: 2px;
