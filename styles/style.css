@@ -425,14 +425,61 @@ main .about p a:hover {
   color: var(--BrightBlue);
 }
 
-.skills .cards {
-  -ms-grid-columns: (250px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 250px);
+.skills .chart--container {
+  background-color: var(--VeryDarkBlue);
+  padding: 0.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 300px);
+  grid-auto-rows: 250px;
+  place-content: center;
+  gap: 1rem;
 }
 
-.skills .cards .img--section img {
-  width: 50px;
-  height: 50px;
+.skills .chart--container article {
+  padding: 0.5em;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-5));
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, var(--alpha-5));
+  background-color: var(--VeryDarkDesaturatedBlue);
+}
+
+.skills .chart--container article:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.skills .chart--container .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.skills .chart--container .tools h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--LightGrayishBlue);
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+
+.skills img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
 }
 
 .hide {

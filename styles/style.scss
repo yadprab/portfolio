@@ -397,20 +397,49 @@ main {
 
 }
 .skills{
+    .chart--container{
+        background-color: var(--VeryDarkBlue);
+        padding: 0.5em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        grid-auto-rows: 250px;
+        place-content: center;
+        gap: 1rem;
 
-    .cards{
-        grid-template-columns: repeat(auto-fit,250px);
-    
+        article{
+            padding: 0.5em;
+            @include box-shadow-5;
+            background-color: var(--VeryDarkDesaturatedBlue);
 
-        .img--section{
-            img{
-                width: 50px;
-                height: 50px;
+            &:hover{
+                transform: translateY(-5px)
             }
         }
+        .tools{
+          @include flex-1;
+        justify-content: flex-start;
 
+        h3{
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: var(--LightGrayishBlue);
+            font-size: 0.9rem;
+            margin-bottom: 1em;
+
+        }
+        }
     }
- 
+ img {
+     
+
+     width: 20px;
+     height: 20px;
+     object-fit: cover;
+     margin-left: 0.5em;
+     margin-bottom: 1em;
+ }
+   
   
 }
 
