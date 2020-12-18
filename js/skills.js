@@ -68,16 +68,25 @@ const cssChart = (chart) => {
   let cssSkillChart = new Chart(chart.getContext("2d"), {
     type: "doughnut",
     data: {
-      labels: ["basics", "flexBox", "grid", "animation", "mixins", "variables"],
+      labels: [
+        "basics",
+        "flexBox",
+        "grid",
+        "animation",
+        "mixins",
+        "variables",
+        "responsive design",
+      ],
       datasets: [
         {
-          data: [90, 90, 90, 80, 85, 80],
+          data: [90, 90, 90, 80, 85, 80, 80],
           backgroundColor: [
             "#1488C8",
             "#33AAEB",
             "#6AC1F0",
             "#A2D9F6",
             "#cd6799",
+            "#007ACC",
             "#DAF0FB",
           ],
 

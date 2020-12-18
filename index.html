@@ -12,9 +12,10 @@
       <nav>
         <ul>
           <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="projects.html">projects</a></li>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="#about">about</a></li>
+           <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
         <button id="close--button" aria-label="close--button">
           <svg
@@ -43,24 +44,24 @@
         </section>
         <!-- title--section -->
 
-        <ul class="desktop--nav hide">
+        <ul class="desktop--nav ">
           <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="projects.html">projects</a></li>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="#about">about</a></li>
+        <li><a href="#projects"  data-links="projects">projects</a></li>
+            <li ><a href="#skills" data-links="skills" >skills</a></li>
+          <li><a href="#contact"  data-links="contact">contact</a></li>
         </ul>
         <!-- desktop--nav -->
         <section class="button--section">
           <section class="theme--button--section">
             <button id="light--theme--button" role="switch">
-             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
-            <path
-              fill="#FFF"
-              fill-rule="evenodd"
-              d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
-            />
-          </svg>
-            
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+                />
+              </svg>
             </button>
           </section>
           <!-- theme--section -->
@@ -102,26 +103,26 @@
               developer
             </p>
           </article>
+          <section class="email--to--section">
+            
+            <a
+              href="mailto:yadprabdev@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >hire me</a
+            >
+          </section>
           <!-- article section  -->
         </section>
         <!-- hero text section  -->
-
-        <section class="email--to--section">
-          <a
-            href="mailto:yadhavanprabhakar744@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >hire me</a
-          >
-        </section>
       </section>
       <!-- hero section  -->
     </header>
     <!-- header section  -->
 
     <main>
-      <article class="about">
-        <h2>About me</h2>
+      <article class="about" id="about">
+        <h2>About myself</h2>
         <p>
           I am a self-taught developer with knowledge of HTML/SASS+CSS/JS and
           looking for an opportunity to contribute my part to this society by
@@ -132,11 +133,11 @@
           make a great movie its all about teamwork and dedication each person
           has an important role to play in making process. if one of the members
           in the crew makes a mistake it will affect the whole movie. so I
-          believe in teamwork <a href="#about.html"> more about journey </a>
+          believe in teamwork
         </p>
       </article>
       <!-- about section  -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2>projects</h2>
         <ul class="cards">
           <li>
@@ -309,11 +310,11 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
           </li>
         </ul>
         <section class="more--pro">
-          <a href="projects.html">more projects</a>
+          <a href="projects.html" id='more'>more projects</a>
         </section>
       </section>
       <!-- projects section  -->
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2>skills</h2>
         <section class="chart--container">
           <article class="html-chart--area">
@@ -352,13 +353,22 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             </section>
             <canvas id="tsChart" width="100px" height="70px"></canvas>
           </article>
+           <article class="others">
+            <section class="tools">
+               <h3>version control & hosting</h3>
+              
+            </section>
+              <img src="./images/Git.png" alt="git logo">
+              <img src="./images/netlify.png" alt="netlify logo">
+              <img src="./images/vercel.png" alt="vercel logo" >
+        </article>
         </section>
-        <article></article>
+       
       </section>
       <!-- skills section  -->
-      <section id="contact">
+      <section id="contact" class="contact">
         <h2>contact me</h2>
-        <form method="POST" data-netlify="true"  data-netlify-recaptcha="true" >
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <section class="form--control">
             <label for="name">name</label>
             <input type="text" id="name" name="name" />
@@ -371,7 +381,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <label for="comments">comments</label>
             <textarea name="comments" id="comments"></textarea>
           </section>
-         <div data-netlify-recaptcha="true"></div>
+          <div data-netlify-recaptcha="true"></div>
           <input type="submit" id="submit" value="contact" />
         </form>
       </section>
@@ -409,9 +419,13 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </main>
     <!-- main section  -->
 
-     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/skills.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/nav.js"></script>
   </body>
 </html>

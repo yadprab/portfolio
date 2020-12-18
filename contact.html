@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+     <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <section class="mobile--nav hide">
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+         
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <button id="close--button" aria-label="close--button">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 18L18 6M6 6L18 18"
+              stroke="#4A5568"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </nav>
+    </section>
+    <!-- mobile--nav--section -->
+    <header>
+      <nav>
+        <section class="title--section">
+          <h1>conatct</h1>
+        </section>
+        <!-- title--section -->
+
+        <ul class="desktop--nav hide">
+          <li><a href="index.html">home</a></li>
+        
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <!-- desktop--nav -->
+        <section class="button--section">
+          <section class="theme--button--section">
+            <button id="light--theme--button" role="switch">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+                />
+              </svg>
+            </button>
+          </section>
+          <!-- theme--section -->
+          <section class="icon--section">
+            <button id="nav--button" aria-label="navigation">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="11"
+                aria-labelledby="title desc"
+              >
+                <title id="title">navigation button</title>
+                <desc id="desc">three bars</desc>
+                <g fill="#2D314D" fill-rule="evenodd">
+                  <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
+                </g>
+              </svg>
+            </button>
+            <!-- nav--button -->
+          </section>
+          <!-- icon--section -->
+        </section>
+      </nav>
+      <!-- navigation -->
+    </header>
+    <!-- header section  -->
+
+    <main>
+      <section id="contact" class="contact">
+        
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <section class="form--control">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" />
+          </section>
+          <section class="form--control">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </section>
+          <section class="form--control">
+            <label for="comments">comments</label>
+            <textarea name="comments" id="comments"></textarea>
+          </section>
+          <div data-netlify-recaptcha="true"></div>
+          <input type="submit" id="submit" value="contact" />
+        </form>
+      </section>
+    </main>
+
+ <script src="./js/main.js"></script>
+  </body>
+</html>
