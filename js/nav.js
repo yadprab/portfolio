@@ -69,7 +69,7 @@ const skills = () => {
   };
 
   const skiNav = new IntersectionObserver(handleIntersectSki, {
-    rootMargin: "-300px",
+    rootMargin: "-150px",
     threshold:0,
   });
 
@@ -92,7 +92,7 @@ const contact = () => {
   };
 
   const conNav = new IntersectionObserver(handleIntersectCon, {
-    rootMargin: "-450px",
+    rootMargin: "-150px",
   });
 
   conNav.observe(contact);
