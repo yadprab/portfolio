@@ -533,7 +533,7 @@ main .about p a:hover {
   height: 50px;
 }
 
-#contact {
+.contact {
   padding: 0 1.5em;
   margin-bottom: 3em;
   display: -webkit-box;
@@ -551,14 +551,14 @@ main .about p a:hover {
           flex-direction: column;
 }
 
-#contact h2 {
+.contact h2 {
   text-transform: capitalize;
   margin-bottom: 1em;
   padding: 0 1em;
   color: var(--LightGrayishBlue);
 }
 
-#contact form {
+.contact form {
   width: 100%;
   max-width: 480px;
   background-color: var(--VeryDarkDesaturatedBlue);
@@ -582,7 +582,7 @@ main .about p a:hover {
   padding: 0.5em;
 }
 
-#contact form .form--control {
+.contact form .form--control {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,7 +602,7 @@ main .about p a:hover {
           align-items: flex-start;
 }
 
-#contact form .form--control label {
+.contact form .form--control label {
   text-transform: uppercase;
   font-size: 0.9rem;
   margin-bottom: 0.3em;
@@ -610,7 +610,7 @@ main .about p a:hover {
   color: var(--LightGrayishBlue);
 }
 
-#contact form .form--control input:not(#submit) {
+.contact form .form--control input:not(#submit) {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -625,12 +625,12 @@ main .about p a:hover {
   background-color: var(--VeryLightGrayishBlue);
 }
 
-#contact form .form--control input:not(#submit) :focus {
+.contact form .form--control input:not(#submit) :focus {
   -webkit-box-shadow: 0 0 10px -5px var(--BrightBlue);
           box-shadow: 0 0 10px -5px var(--BrightBlue);
 }
 
-#contact form .form--control textarea {
+.contact form .form--control textarea {
   width: 100%;
   height: 200px;
   margin-bottom: 1.5em;
@@ -646,7 +646,7 @@ main .about p a:hover {
   padding: 1em;
 }
 
-#contact form #submit {
+.contact form #submit {
   display: inline-block;
   line-height: 1.5;
   -webkit-appearance: none;
@@ -674,7 +674,7 @@ main .about p a:hover {
   transition: opacity 0.4s ease-in;
 }
 
-#contact form #submit:hover {
+.contact form #submit:hover {
   opacity: 1;
 }
 
@@ -855,16 +855,12 @@ footer svg path {
           animation: buzz 1s linear;
 }
 
-.pop {
-  opacity: 0;
-  -webkit-animation: pop 0.4s ease-in infinite;
-          animation: pop 0.4s ease-in infinite;
-}
-
 @-webkit-keyframes buzz {
   0% {
     -webkit-transform: translateX(3px) rotate(2deg);
             transform: translateX(3px) rotate(2deg);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
@@ -901,6 +897,8 @@ footer svg path {
   100% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
             transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -908,6 +906,8 @@ footer svg path {
   0% {
     -webkit-transform: translateX(3px) rotate(2deg);
             transform: translateX(3px) rotate(2deg);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   20% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
@@ -944,32 +944,8 @@ footer svg path {
   100% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
             transform: translateX(-3px) rotate(-2deg);
-  }
-}
-
-@-webkit-keyframes pop {
-  0% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-    opacity: 0;
-  }
-  100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes pop {
-  0% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
   }
 }
 

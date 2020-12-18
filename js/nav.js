@@ -1,12 +1,9 @@
 const mainFn = () => {
   const morePro = document.querySelector(".more--pro");
 
-  setInterval(() => {
-    morePro.classList.add("buzz");
-    setTimeout(() => {
-      morePro.classList.remove("buzz");
-    }, 2000);
-  }, 1000);
+   setInterval(()=>{morePro.classList.toggle("buzz")},2000)
+
+  
 
   navFn();
 
@@ -61,7 +58,7 @@ const skills = () => {
 
   const handleIntersectSki = (entries) => {
     entries.forEach((entry) => {
-      console.log(entry.isIntersecting);
+     
       entry.isIntersecting
         ? parent.classList.add("highlight--skill")
         : parent.classList.remove("highlight--skill");
@@ -84,7 +81,7 @@ const contact = () => {
 
   const handleIntersectCon = (entries) => {
     entries.forEach((entry) => {
-      console.log(entry.isIntersecting);
+     
       entry.isIntersecting
         ? parent.classList.add("highlight--contact")
         : parent.classList.remove("highlight--contact");
