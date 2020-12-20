@@ -855,6 +855,15 @@ footer svg path {
           animation: buzz 1s linear;
 }
 
+.back--to--top {
+  position: fixed;
+  bottom: 50px;
+  background-color: var(--BrightBlue);
+  padding: 1.5em;
+  left: 20px;
+  border-radius: 5px;
+}
+
 @-webkit-keyframes buzz {
   0% {
     -webkit-transform: translateX(3px) rotate(2deg);
